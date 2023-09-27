@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Lab05Assignment</title>
+  <title>Travelling differnt cities</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -11,6 +11,13 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <style>
+      caption {
+          text-align: left;
+          caption-side: top;
+          position: relative;
+      }
+  </style>
 </head>
 <title>Visit Cities with Varsha Valavala</title>
 <body>
@@ -40,5 +47,204 @@
   <p>
   The row with city names will break first because col-md, a class used for medium-sized and bigger screens, is related with it. Therefore, when we shrink the screen, the city names won't fit properly and will consequently break. The letters fit nicely because they belong to the class col-sm-2, which is used for smaller screens; regenerate this with a new line.
   </p>
-  </body>
-  </html>
+  <br>
+
+    <div class="container">
+        <img src="Amsterdam.jpg" class="img-fluid" alt="Image of Amsterdam" height="400" width="400">
+        <img src="Las vegas.jpg" class="img-fluid" alt="Image of Las Vegas" height="400" width="400">
+        <img src="Vijayawada.jpg" class="img-fluid" alt="Image of Vijayawada" height="400" width="400">
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="thumbnail-container">
+        <img src="Amsterdam.jpg" class="img-thumbnail" alt="Image of Amsterdam" height="400" width="400">
+        <img src="Las vegas.jpg" class="img-thumbnail" alt="Image of Las vegas" height="400" width="400">
+        <img src="Vijayawada.jpg" class="img-thumbnail" alt="Image of Vijayawada" height="400" width="400">
+    </div>
+
+    <br>
+    <table class="table table-bordered table-striped table-hover table-sm">
+      <caption>Cities, Rivers and Trees</caption>
+      <thead class="table-dark">
+          <tr>
+              <th scope="col">Letter</th>
+              <th scope="col">City</th>
+              <th scope="col">River</th>
+              <th scope="col">Tree</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="table-info" scope="row">
+              <td>V</td>
+              <td>Venezuela</td>
+              <td>Verbena</td>
+              <td>Van Duzen</td>
+          </tr>
+          <tr class="table-secondary" scope="row">
+              <td>A</td>
+              <td>Allahabad</td>
+              <td>Aberjona</td>
+              <td>Apple</td>
+          </tr>
+          <tr class="table-info" scope="row">
+              <td>L</td>
+              <td>Las vegas</td>
+              <td>Ligustrum</td>
+              <td>Lagunitas</td>
+          </tr>
+          <tr class="table-secondary" scope="row">
+              <td>A</td>
+              <td>Amsterdam</td>
+              <td>Aberjona</td>
+              <td>acacia</td>
+          </tr>
+          <tr class="table-info" scope="row">
+              <td>V</td>
+              <td>Vijayawada</td>
+              <td>Vinca</td>
+              <td>Verde</td>
+          </tr>
+          <tr class="table-secondary" scope="row">
+              <td>A</td>
+              <td>Aurangabad</td>
+              <td>Abiqua Creek</td>
+              <td>Amla</td>
+          </tr>
+      </tbody>
+  </table>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+    <a class="navbar-brand" href="#">Button Groups</a>
+</nav>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="Image buttons">
+        <button type="button" class="btn btn-success">V</button>
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">L</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Alert buttons">
+        <button type="button" class="btn btn-warning">A</button>
+        <button type="button" class="btn btn-warning">V</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Danger buttons">
+        <button type="button" class="btn btn-danger">A</button>
+    </div>
+</div>
+
+<br>
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+    <a class="navbar-brand" href="#">Dropdown</a>
+</nav>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary active dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            V
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">V</a></li>
+            <li><a class="dropdown-item" href="#">A</a></li>
+            <li><a class="dropdown-item" href="#">L</a></li>
+            <li><a class="dropdown-item" href="#">A</a></li>
+            <li><a class="dropdown-item" href="#">V</a></li>
+            <li><a class="dropdown-item" href="#">A</a></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-primary">A</button>
+    <button type="button" class="btn btn-primary">L</button>
+    <button type="button" class="btn btn-primary">A</button>
+    <button type="button" class="btn btn-primary">V</button>
+    <button type="button" class="btn btn-primary">A</button>
+</div>
+
+<br>
+<br>
+
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Reference to Pages
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+        <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+    </ul>
+</div>
+
+<br>
+<br>
+
+<form>
+    <div class="form-group mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="exampleInputPassword1" class="form-label">City</label>
+        <input type="text" class="form-control" id="userCity" placeholder="Enter your city">
+    </div>
+    <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Amsterdam.jpg" class="card-img-top" alt="City 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Amsterdam</h5>
+                    <p class="card-text">Amsterdam is the capital city of the Netherlands and is known for its rich history, vibrant culture, and picturesque canals.Amsterdam holds a number of events throughout the year, including the Amsterdam Dance Event (ADE), one of the top electronic music festivals in the world, and King's Day (Koningsdag), a national celebration of the Dutch monarch's birthday. </p>
+                  </p>
+                    <a href="Amsterdam.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Las vegas.jpg" class="card-img-top" alt="City 2 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Las Vegas</h5>
+                    <p class="card-text">Las Vegas is a vibrant and iconic city located in the Mojave Desert in the state of Nevada, USA. It is renowned worldwide for its entertainment, nightlife, and casino resorts.  The city comes alive at night, with numerous nightclubs, bars, and lounges that cater to a diverse range of tastes. The nightlife on the Strip is particularly lively, with clubs featuring internationally renowned DJs and performers.
+                    </p>
+                    <a href="Las vegas.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Vijayawada.jpg" class="card-img-top" alt="City 3 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Vijayawada</h5>
+                    <p class="card-text"><p>Vijayawada is a city located in the southeastern part of the Indian state of Andhra Pradesh. It is one of the largest and most important cities in the state and serves as its commercial, political, and educational hub.Vijayawada is home to several prestigious educational institutions, including the renowned Andhra Loyola College and Siddhartha Medical College. The city has a strong emphasis on education, and many students from neighboring regions come here for higher education </p>
+                    </p>
+                    <a href="Vijayawada.html" class="btn btn-primary" target="_blank">View More</a>
+
+
+                      <head>
+                          
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+</body>
+
+</html>
+
+
